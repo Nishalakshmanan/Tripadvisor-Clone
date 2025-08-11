@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--My style sheet-->
+    <link rel="stylesheet" href="./style.css" />
+    <!--Font awesome CDN link-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!--Google style sheet-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--Navbar section-->
+    <div class="navbar">
+      <div class="navbar__sec1">
+        <i class="menu fa-solid fa-bars" style="color: #121212"></i>
+        <img
+          src="./images/trip_advisor_logo-removebg-preview.png"
+          alt="logo"
+          width="70px"
+          height="40px"
+        />
+        <h2>Tripadvisor</h2>
+      </div>
+      <div class="navbar__sec2">
+        <h5>Discover</h5>
+        <h5>Trips</h5>
+        <h5>Review</h5>
+        <h5>Forums</h5>
+      </div>
+      <div class="navbar__sec3">
+        <h5 class="nowrap">
+          <i class="fa-solid fa-globe" style="color: #0a0a0a"></i> | INR
+        </h5>
+        <p class="nowrap navbar__sec3__sign-in">Sign in</p>
+      </div>
+    </div>
+    <!--where-to section-->
+    <div class="where-to">
+      <h1>Where to?</h1>
+    </div>
+    <!--Categories section-->
+    <div class="categories">
+      <div>
+        <img
+          src="./images/house.png"
+          alt="home icon"
+          width="15px"
+          height="15px"
+        />
+        <h4 class="nowrap">Search All</h4>
+      </div>
+      <div>
+        <img
+          src="./images/hotel-bed.png"
+          alt="hotel-bed icon"
+          width="15px"
+          height="15px"
+        />
+        <h4 class="nowrap">Hotels</h4>
+      </div>
+      <div>
+        <img
+          src="./images/camera.png"
+          alt="camera"
+          width="15px"
+          height="15px"
+        />
+        <h4 class="nowrap">Things to Do</h4>
+      </div>
+      <div>
+        <img
+          src="./images/fork.png"
+          alt="restaurants"
+          width="15px"
+          height="15px"
+        />
+        <h4 class="nowrap">Restaurants</h4>
+      </div>
+      <div>
+        <img
+          src="./images/airplane.png"
+          alt="Flight"
+          width="15px"
+          height="15px"
+        />
+        <h4 class="nowrap">flights</h4>
+      </div>
+      <div>
+        <img
+          src="./images/resort.png"
+          alt="Holiday-home"
+          width="15px"
+          height="15px"
+        />
+        <h4 class="nowrap">Holiday Homes</h4>
+      </div>
+    </div>
+    <!--searchbar section-->
+    <div class="search__bar">
+      <div class="search__bar__s1">
+        <i class="fa-solid fa-magnifying-glass" style="color: #0c0d0d"></i>
+        <input
+          class="search__bar__input"
+          type="text"
+          placeholder="Places to go,things to do,hotels..."
+        />
+      </div>
+      <div class="horizontal-line"></div>
+      <div class="search__bar__s2">
+        <button>Search</button>
+      </div>
+    </div>
+    <!--booknow section-->
+    <div class="booknow-section">
+      <div class="booknow__image"></div>
+
+      <div class="booknow__divider"></div>
+      <div class="booknow__desc">
+        <h1 class="booknow__desc__header">
+          Find things to do for everything you're into
+        </h1>
+        <p class="booknow__desc__para">
+          Browse 400,000+ experiences and book with us.
+        </p>
+        <p class="booknow__desc__button">Book now</p>
+      </div>
+    </div>
+    <!--travel-choice section-->
+    <div class="travel-choice">
+      <h5 class="travel-choice__header">Do something award-winning</h5>
+      <p class="travel-choice__desc">
+        2025's Travellers' Choice Awards Best of the Best Things to Do
+      </p>
+      <div class="travel-choice__images">
+        <div class="img-title">
+          <img src="./images/c-1.jpg" alt="travel-choice-img1" />
+          <h3>Top Experiences</h3>
+        </div>
+        <div class="img-title">
+          <img src="./images/c-2.jpg" alt="travel-choice-img1" />
+          <h3>Top Attractions</h3>
+        </div>
+        <div class="img-title">
+          <img src="./images/c-3.jpg" alt="travel-choice-img1" />
+          <h3>Bucket List</h3>
+        </div>
+        <div class="img-title">
+          <img src="./images/c-4.jpg" alt="travel-choice-img1" />
+          <h3>Cultural & Historic</h3>
+        </div>
+        <div class="img-title">
+          <img src="./images/c-5.jpg" alt="travel-choice-img1" />
+          <h3>Food & Drink</h3>
+        </div>
+      </div>
+    </div>
+    <!--like-choice section-->
+    <div class="like-choice">
+      <h5 class="like-choice__header">You might like these</h5>
+      <p class="like-choice__desc">More things to do in Albufeira</p>
+      <div class="like-choice__images">
+        <div class="cards">
+          <img src="./images/l-1.jpg" alt="like-choice-img1" />
+          <h5 class="cards__desc">Albufeira Dreamer Boat Trip</h5>
+          <h6 class="cards__rating">
+            4.6 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i
+              class="fa-solid fa-circle-half-stroke"
+              style="color: #21440a"
+            ></i>
+            (1007)
+          </h6>
+        </div>
+        <div class="cards">
+          <img src="./images/l-2.jpg" alt="like-choice-img2" />
+          <h5 class="cards__desc">Albufeira: Dolphins and Caves Tour</h5>
+          <h6 class="cards__rating">
+            4.8 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (471)
+          </h6>
+        </div>
+        <div class="cards">
+          <img src="./images/l-3.jpg" alt="like-choice-img3" />
+          <h5 class="cards__desc">
+            Albufeira 1.5 hour Off-Road Tour Quad Adventure Tour
+          </h5>
+          <h6 class="cards__rating">
+            4.4 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i
+              class="fa-solid fa-circle-half-stroke"
+              style="color: #21440a"
+            ></i>
+            (174)
+          </h6>
+        </div>
+        <div class="cards">
+          <img src="./images/l-4.jpg" alt="like-choice-img4" />
+          <h5 class="cards__desc">
+            Half Day Tour with Jeep Safari in the Algarve Mountains
+          </h5>
+          <h6 class="cards__rating">
+            4.8 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (385)
+          </h6>
+        </div>
+        <div class="cards">
+          <img src="./images/l-5.jpg" alt="like-choice-img5" />
+          <h5 class="cards__desc">
+            Catamaran Cruise: Caves and Coastline to Benagil
+          </h5>
+          <h6 class="cards__rating">
+            4.7 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i
+              class="fa-solid fa-circle-half-stroke"
+              style="color: #21440a"
+            ></i>
+            (221)
+          </h6>
+        </div>
+        <div class="cards">
+          <img src="./images/l-6.jpg" alt="like-choice-img6" />
+          <h5 class="cards__desc">
+            Albufeira Kayak Cave Tour – Hidden Beaches & Cliffs
+          </h5>
+          <h6 class="cards__rating">
+            4.8 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (168)
+          </h6>
+        </div>
+        <div class="cards">
+          <img src="./images/l-7.jpg" alt="like-choice-img7" />
+          <h5 class="cards__desc">
+            Dolphin Watching and Cave Boat Cruise from Albufeira
+          </h5>
+          <h6 class="cards__rating">
+            4.4 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i
+              class="fa-solid fa-circle-half-stroke"
+              style="color: #21440a"
+            ></i>
+            (131)
+          </h6>
+        </div>
+      </div>
+    </div>
+    <!--explore-choice section-->
+    <div class="explore-choice">
+      <h5 class="explore-choice__header">
+        Explore experiences near Chennai (Madras)
+      </h5>
+      <p class="explore-choice__desc">Can't-miss picks near you</p>
+      <div class="explore-choice__images">
+        <div class="cards">
+          <img src="./images/ch-1.jpg" alt="explore-choice-img1" />
+          <h5 class="cards__desc">
+            Mahabalipuram tour by Tourism Ministry approved company
+          </h5>
+          <h6 class="cards__rating">
+            4.9 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (317)
+          </h6>
+          <h6 class="cards__price">from ₹8,975 per adult</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/ch-2.jpg" alt="explore-choice-img2" />
+          <h5 class="cards__desc">
+            Total Chennai city tour in Private car with guide & lunch by Wonder
+            tours
+          </h5>
+          <h6 class="cards__rating">
+            4.9 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (61)
+          </h6>
+          <h6 class="cards__price">from ₹4,936 per adult</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/ch-3.jpg" alt="explore-choice-img3" />
+          <h5 class="cards__desc">
+            Traditional Cooking Class in Chennai in a Local Home with Sundar
+          </h5>
+          <h6 class="cards__rating">
+            4.9 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (34)
+          </h6>
+          <h6 class="cards__price">from ₹6,642 per adult</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/ch-4.jpg" alt="explore-choice-img4" />
+          <h5 class="cards__desc">
+            Auroville and Pondicherry Tour from Chennai
+          </h5>
+          <h6 class="cards__rating">
+            5.0 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (5)
+          </h6>
+          <h6 class="cards__price">from ₹3,949 per adult</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/ch-5.jpg" alt="explore-choice-img5" />
+          <h5 class="cards__desc">
+            Wild life tour in Chennai with guide and private car
+          </h5>
+          <h6 class="cards__rating">
+            4.9 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (8)
+          </h6>
+          <h6 class="cards__price">from ₹11,219 per adult</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/ch-6.jpg" alt="explore-choice-img6" />
+          <h5 class="cards__desc">
+            Chennai Full Day Sightseeing in a Private Car
+          </h5>
+          <h6 class="cards__rating">
+            5.0 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (1)
+          </h6>
+          <h6 class="cards__price">from ₹6,810 per group</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/ch-7.jpg" alt="explore-choice-img7" />
+          <h5 class="cards__desc">
+            Georgetown heritage walking tour in Chennai about the founding of
+            Chennai
+          </h5>
+          <h6 class="cards__rating">
+            4.9 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (123)
+          </h6>
+          <h6 class="cards__price">from ₹4,488 per adult</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/ch-8.jpg" alt="explore-choice-img8" />
+          <h5 class="cards__desc">
+            Pondicherry day trip from Chennai by Wonder tours
+          </h5>
+          <h6 class="cards__rating">
+            4.9 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (40)
+          </h6>
+          <h6 class="cards__price">from ₹14,258 per adult</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/ch-9.jpg" alt="explore-choice-img9" />
+          <h5 class="cards__desc">
+            Private 6 days Exotic Tamilnadu Tour from Chennai
+          </h5>
+          <h6 class="cards__rating">
+            5.0 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (13)
+          </h6>
+          <h6 class="cards__price">from ₹49,465 per adult</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/ch-10.jpg" alt="explore-choice-img10" />
+          <h5 class="cards__desc">
+            Sowcarpet Street Food Walking Tour in Chennai with guide
+          </h5>
+          <h6 class="cards__rating">
+            5.0 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (63)
+          </h6>
+          <h6 class="cards__price">from ₹4,039 per adult</h6>
+        </div>
+      </div>
+    </div>
+    <!--big-image section-->
+    <div class="bigimage-sec">
+      <img src="./images/big-image.jpg" alt="travelling image" />
+      <div class="msg-box">
+        <div class="msg-box__desc">
+          <h2>The world's best things to do</h2>
+          <h5>
+            Make it a trip to remember with 2025's Travellers' Choice Awards
+            Best of the Best.
+          </h5>
+        </div>
+        <div class="msg-box__button"><h6>Reveal the winners</h6></div>
+      </div>
+    </div>
+    <!--inspiring-choice section-->
+    <div class="inspiration">
+      <div class="inspirational-choice">
+        <h5 class="inspirational-choice__header">
+          Inspiration to get you going
+        </h5>
+        <div class="inspirational-choice__images">
+          <div class="cards">
+            <img src="./images/i-1.jpg" alt="inspirational-choice-img1" />
+            <h3 class="cards__desc">The ultimate family travel guide</h3>
+          </div>
+          <div class="cards">
+            <img src="./images/i-2.jpg" alt="inspirational-choice-img2" />
+            <h3 class="cards__desc">
+              Where to stargaze around the world, from Utah to Dubai
+            </h3>
+          </div>
+          <div class="cards">
+            <img src="./images/i-3.jpg" alt="inspirational-choice-img3" />
+            <h3 class="cards__desc">
+              Load up on art in Paris, NYC, and other culture hot spots
+            </h3>
+          </div>
+          <div class="cards">
+            <img src="./images/i-4.jpg" alt="inspirational-choice-img4" />
+            <h3 class="cards__desc">13 cities, 13 unbelievable food trips</h3>
+          </div>
+          <div class="cards">
+            <img src="./images/i-5.jpg" alt="inspirational-choice-img5" />
+            <h3 class="cards__desc">
+              Bali, Oahu, and 10 other island vacays to book now
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--seasonal-choice section-->
+    <div class="seasonal-choice">
+      <h5 class="seasonal-choice__header">Things to do—right now</h5>
+      <p class="seasonal-choice__desc">Seasonal faves you don't want to miss</p>
+      <div class="seasonal-choice__images">
+        <div class="cards">
+          <img src="./images/sf-1.jpg" alt="seasonal-choice-img1" />
+          <h6 class="cards__place">Sorrento</h6>
+          <h5 class="cards__desc">
+            Small-group boat tour of the Amalfi Coast from Sorrento
+          </h5>
+          <h6 class="cards__rating">
+            4.8 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (326)
+          </h6>
+          <h6 class="cards__price">from €154 per adult</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/sf-2.jpg" alt="seasonal-choice-img2" />
+          <h6 class="cards__place">Albufeira</h6>
+          <h5 class="cards__desc">
+            Dolphins Search and Benagil Caves from Albufeira
+          </h5>
+          <h6 class="cards__rating">
+            4.9 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (3,377)
+          </h6>
+          <h6 class="cards__price">from €35 per adult</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/sf-3.jpg" alt="seasonal-choice-img3" />
+          <h6 class="cards__place">Calgary</h6>
+          <h5 class="cards__desc">
+            Explore Banff National Park with Our Premium Day Tour
+          </h5>
+          <h6 class="cards__rating">
+            5.0 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (323)
+          </h6>
+          <h6 class="cards__price">from €92 per adult</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/sf-4.jpg" alt="seasonal-choice-img4" />
+          <h6 class="cards__place">Jackson</h6>
+          <h5 class="cards__desc">
+            Whitewater Rafting in Jackson Hole: Small Boat Excitement
+          </h5>
+          <h6 class="cards__rating">
+            4.9 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (489)
+          </h6>
+          <h6 class="cards__price">from €114 per adult</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/sf-5.jpg" alt="seasonal-choice-img5" />
+          <h6 class="cards__place">Majorca</h6>
+          <h5 class="cards__desc">
+            Private sailing with Paella and Tapas in Palma
+          </h5>
+          <h6 class="cards__rating">
+            4.9 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (109)
+          </h6>
+          <h6 class="cards__price">from €475 per group</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/sf-6.jpg" alt="seasonal-choice-img6" />
+          <h6 class="cards__place">Dubrovnik</h6>
+          <h5 class="cards__desc">
+            X-Adventure Sea Kayaking Half Day Tour in Dubrovnik
+          </h5>
+          <h6 class="cards__rating">
+            4.9 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (1,131)
+          </h6>
+          <h6 class="cards__price">from €30 per adult</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/sf-7.jpg" alt="seasonal-choice-img7" />
+          <h6 class="cards__place">Reykjavik</h6>
+          <h5 class="cards__desc">
+            Whale Watching Tour with Professional Guide from Reykjavik
+          </h5>
+          <h6 class="cards__rating">
+            4.4 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i
+              class="fa-solid fa-circle-half-stroke"
+              style="color: #21440a"
+            ></i>
+            (342)
+          </h6>
+          <h6 class="cards__price">from €76 per adult</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/sf-8.jpg" alt="seasonal-choice-img8" />
+          <h6 class="cards__place">Darwin</h6>
+          <h5 class="cards__desc">
+            Kakadu Day Tour from Darwin with Offroad Dreaming
+          </h5>
+          <h6 class="cards__rating">
+            4.8 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (396)
+          </h6>
+          <h6 class="cards__price">from €194 per adult</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/sf-9.jpg" alt="seasonal-choice-img9" />
+          <h6 class="cards__place">West Glacier</h6>
+          <h5 class="cards__desc">
+            Half Day Scenic Float on the Middle Fork of the Flathead River
+          </h5>
+          <h6 class="cards__rating">
+            5.0 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (609)
+          </h6>
+          <h6 class="cards__price">from €73 per adult</h6>
+        </div>
+        <div class="cards">
+          <img src="./images/sf-10.jpg" alt="seasonal-choice-img10" />
+          <h6 class="cards__place">New York City</h6>
+          <h5 class="cards__desc">
+            New York Sunset Schooner Cruise on the Hudson River
+          </h5>
+          <h6 class="cards__rating">
+            4.8 <i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i
+            ><i class="fa-solid fa-circle" style="color: #21440a"></i> (84)
+          </h6>
+          <h6 class="cards__price">from €79 per adult</h6>
+        </div>
+      </div>
+    </div>
+    <!--iconic-choice section-->
+    <div class="iconic-choice">
+      <h5 class="iconic-choice__header">Iconic places you need to see</h5>
+      <div class="iconic-choice__images">
+        <div class="img-title">
+          <img src="./images/ic-1.jpg" alt="iconic-choice-img1" />
+          <h3>Rome, Italy</h3>
+        </div>
+        <div class="img-title">
+          <img src="./images/ic-2.jpg" alt="iconic-choice-img2" />
+          <h3>Paris, France</h3>
+        </div>
+        <div class="img-title">
+          <img src="./images/ic-3.jpg" alt="iconic-choice-img3" />
+          <h3>Las Vegas, NV</h3>
+        </div>
+        <div class="img-title">
+          <img src="./images/ic-4.jpg" alt="iconic-choice-img4" />
+          <h3>Reykjavik, Iceland</h3>
+        </div>
+        <div class="img-title">
+          <img src="./images/ic-5.jpg" alt="iconic-choice-img5" />
+          <h3>London, UK</h3>
+        </div>
+        <div class="img-title">
+          <img src="./images/ic-6.jpg" alt="iconic-choice-img6" />
+          <h3>Florence, Italy</h3>
+        </div>
+        <div class="img-title">
+          <img src="./images/ic-7.jpg" alt="iconic-choice-img7" />
+          <h3>New York City, NY</h3>
+        </div>
+        <div class="img-title">
+          <img src="./images/ic-8.jpg" alt="iconic-choice-img8" />
+          <h3>Barcelona, Spain</h3>
+        </div>
+        <div class="img-title">
+          <img src="./images/ic-9.jpg" alt="iconic-choice-img9" />
+          <h3>Dubai, United Arab Emirates</h3>
+        </div>
+        <div class="img-title">
+          <img src="./images/ic-10.jpg" alt="iconic-choice-img10" />
+          <h3>Queenstown, New Zealand</h3>
+        </div>
+      </div>
+    </div>
+    <!--wanderlab-choice section-->
+    <div class="wanderlab-section">
+      <div class="wanderlab__image">
+        <img
+          src="./images/wonderlab.jpg"
+          alt="travel-img4"
+          width="100px "
+          height="100px"
+        />
+      </div>
+      <div class="wanderlab__desc">
+        <div class="wanderlab__link">
+          <img
+            src="./images/trip_advisor_logo-removebg-preview.png"
+            alt="logo"
+            width="35px"
+            height="20px"
+          />
+          <p class="nowrap">Sponsored by</p>
+          <a href="">Wanderlab</a>
+        </div>
+        <h1 class="wanderlab__desc__header">Watch The Wanderer</h1>
+        <p class="wanderlab__desc__para">
+          Tripadvisor's award-winning travel series, now streaming on Amazon
+          Prime Video
+        </p>
+        <a class="wanderlab__desc__button">Learn more</a>
+      </div>
+    </div>
+    <!--travellers-choice section-->
+    <div class="travellers-choice-section">
+      <div class="travellers-choice__desc">
+        <img
+          src="./images/2025-logo.svg"
+          alt="2025-logo"
+          width="60px"
+          height="60px"
+        />
+
+        <h1 class="travellers-choice__desc__header">
+          Travellers' Choice Awards Best of the Best
+        </h1>
+        <p class="travellers-choice__desc__para">
+          Among our top 1% of places, stays, eats, and experiences—decided by
+          you.
+        </p>
+        <a class="travellers-choice__desc__button">See the winners</a>
+      </div>
+      <div class="travellers-choice__image">
+        <img
+          src="./images/paragliding.png"
+          alt="traveller-choice-img"
+          width="200px "
+          height="200px"
+        />
+      </div>
+    </div>
+    <!--browse-theme section-->
+    <div class="browse-theme-section">
+      <h5 class="browse-theme__header">Browse themed collections</h5>
+      <div class="browse-theme__images">
+        <div class="cards">
+          <div class="img-title">
+            <img src="./images/bt-1.jpg" alt="browse-theme-img1" />
+            <h3>Pizza, Roman style</h3>
+          </div>
+          <h3 class="cards__desc">
+            Classes and experiences for authentic pizza
+          </h3>
+        </div>
+        <div class="cards">
+          <div class="img-title">
+            <img src="./images/bt-2.jpg" alt="browse-theme-img2" />
+            <h3>Get right to the reef</h3>
+          </div>
+          <h3 class="cards__desc">Ways to explore the Great Barrier Reef</h3>
+        </div>
+        <div class="cards">
+          <div class="img-title">
+            <img src="./images/bt-3.jpg" alt="browse-theme-img3" />
+            <h3>Take a grand diversion</h3>
+          </div>
+          <h3 class="cards__desc">Tours to the Grand Canyon from Vegas</h3>
+        </div>
+        <div class="cards">
+          <div class="img-title">
+            <img src="./images/bt-4.jpg" alt="browse-theme-img4" />
+            <h3>London, after dark</h3>
+          </div>
+          <h3 class="cards__desc">There's lots to do when the sun goes down</h3>
+        </div>
+        <div class="cards">
+          <div class="img-title">
+            <img src="./images/bt-5.jpg" alt="browse-theme-img5" />
+            <h3>On the Seine</h3>
+          </div>
+          <h3 class="cards__desc">
+            Sightseeing tours and cruises on the water
+          </h3>
+        </div>
+        <div class="cards">
+          <div class="img-title">
+            <img src="./images/bt-6.jpg" alt="browse-theme-img6" />
+            <h3>Sailing around Sardinia</h3>
+          </div>
+          <h3 class="cards__desc">Find Mediterranean bliss on the water</h3>
+        </div>
+        <div class="cards">
+          <div class="img-title">
+            <img src="./images/bt-7.jpg" alt="browse-theme-img7" />
+            <h3>Head to the Highlands</h3>
+          </div>
+          <h3 class="cards__desc">See rolling hills, castles, and Loch Ness</h3>
+        </div>
+        <div class="cards">
+          <div class="img-title">
+            <img src="./images/bt-8.jpg" alt="browse-theme-img8" />
+            <h3>Only in Tokyo</h3>
+          </div>
+          <h3 class="cards__desc">
+            Unique experiences you can't do anywhere else
+          </h3>
+        </div>
+        <div class="cards">
+          <div class="img-title">
+            <img src="./images/bt-9.jpg" alt="browse-theme-img9" />
+            <h3>All about ancient Greece</h3>
+          </div>
+          <h3 class="cards__desc">
+            Museums, ruins, archaeological sites, and more
+          </h3>
+        </div>
+        <div class="cards">
+          <div class="img-title">
+            <img src="./images/bt-10.jpg" alt="browse-theme-img10" />
+            <h3>London, after dark</h3>
+          </div>
+          <h3 class="cards__desc">There's lots to do when the sun goes down</h3>
+        </div>
+      </div>
+    </div>
+    <div class="footer-sec">
+      <div class="footer__top">
+        <div class="footer__top__sec1">
+          <h5 class="nowrap">About Tripadvisor</h5>
+          <h6 class="nowrap">About Us</h6>
+          <h6 class="nowrap">Press</h6>
+          <h6 class="nowrap">Resources and Policies</h6>
+          <h6 class="nowrap">Careers</h6>
+          <h6 class="nowrap">Trust & Safety</h6>
+          <h6 class="nowrap">Contact us</h6>
+          <h6 class="nowrap">Tripadvisor Technology Blog</h6>
+        </div>
+        <div class="footer__top__sec2">
+          <h5 class="nowrap">Explore</h5>
+          <h6 class="nowrap">Write a review</h6>
+          <h6 class="nowrap">Add a Place</h6>
+          <h6 class="nowrap">Join</h6>
+          <h6 class="nowrap">Travellers' Choice</h6>
+          <h6 class="nowrap">Help Centre</h6>
+          <h6 class="nowrap">Travel Stories</h6>
+        </div>
+        <div class="footer__top__sec3">
+          <h5 class="nowrap">Do Business With Us</h5>
+          <h6 class="nowrap">Owners & DMO/CVB</h6>
+          <h6 class="nowrap">Business Advantage</h6>
+          <h6 class="nowrap">Sponsored Placements</h6>
+          <h6 class="nowrap">Access our Content API</h6>
+        </div>
+        <div class="footer__top__sec4">
+          <h5 class="nowrap">Get The App</h5>
+          <h6 class="nowrap">iPhone App</h6>
+          <h6 class="nowrap">Android App</h6>
+        </div>
+        <div class="footer__top__sec5">
+          <h5 class="nowrap">Tripadvisor Sites</h5>
+          <h6 class="nowrap">Book tours and attraction tickets on Viator</h6>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__left">
+          <div class="footer__left__logo">
+            <div class="footer__left__logo__s1">
+              <img
+                src="./images/trip_advisor_logo-removebg-preview.png"
+                alt="logo"
+                width="50px"
+                height="35px"
+              />
+            </div>
+            <div class="footer__left__logo__s2">
+              <h6>© 2025 Tripadvisor LLC All rights reserved.</h6>
+              <h5>
+                <a href="">Terms of Use</a>
+                <a href="">Privacy and Cookies Statement</a>
+                <a href="">Cookie consent</a> <a href="">Site Map</a>
+                <a href="">How the site works</a> <a href="">Contact us</a>
+                <a href="">Accessibility Statement</a>
+              </h5>
+            </div>
+          </div>
+          <div class="footer__left__desc">
+            <p>
+              Tripadvisor LLC makes no guarantees for availability of prices
+              advertised on our sites and applications. Listed prices may
+              require a stay of a particular length or have blackout dates,
+              qualifications or other applicable restrictions. Tripadvisor LLC
+              is not responsible for any content on external web sites that are
+              not owned or operated by Tripadvisor
+            </p>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="footer__input">
+            <select name="" id="money">
+              <option value="Money">Indian Rupees</option>
+              <option value="Money">U.S. Dollars</option>
+              <option value="Money">Australian Dollars</option>
+            </select>
+            <select name="" id="country">
+              <option value="Country">India</option>
+              <option value="Country">canada</option>
+              <option value="Country">United States</option>
+            </select>
+          </div>
+          <div class="footer__icons">
+            <i class="fa-brands fa-facebook" style="color: #0c0d0d"></i>
+            <i class="fa-brands fa-x-twitter" style="color: #0c0d0d"></i>
+            <i class="fa-brands fa-pinterest" style="color: #0f0f0f"></i>
+            <i class="fa-brands fa-instagram" style="color: #0c0d0d"></i>
+            <i class="fa-brands fa-youtube" style="color: #0c0d0d"></i>
+            <i class="fa-brands fa-tiktok" style="color: #0f0f0f"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
